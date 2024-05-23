@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Db Navigation App dummy</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css"
+    />
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="Images/image.png" />
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <header>
+      <section class="header-main">
+        <div class="header-left"></div>
+        <div class="header-right">
+          <div class="header-text">
+            <h1>Affordable Rail Travel</h1>
+            <p>explore what you want . You are our top priority</p>
+            <button>Super Saver Fare</button>
+          </div>
+        </div>
+      </section>
+      <section class="header1">
+        <div class="pTrip"><a>Private Trip</a></div>
+        <div class="bTrip"><a>Business Trip</a></div>
+        <div class="Help"><a>Help & Contact</a></div>
+        <div class="language">
+          <select>
+            <option value="en" data-flag-icon="us">
+              &#127482;&#127480; English
+            </option>
+            <option value="de" data-flag-icon="de">
+              &#127465;&#127466; German
+            </option>
+            <option value="fr" data-flag-icon="fr">
+              &#127467;&#127479; French
+            </option>
+          </select>
+        </div>
+      </section>
+      <section class="navs">
+        <nav class="navbar">
+          <div class="navbar-left">
+            <ul class="navbar-items">
+              <li class="dropdown">
+                <h5>Tickets & Offers</h5>
+                <div class="dropdown-content">
+                  <a href="about/story.html">Our Story</a>
+                  <a href="about/mission.html">Mission & Vision</a>
+                  <a href="about/Customer.html">Customer Satisfaction</a>
+                </div>
+              </li>
+              <li class="dropdown">
+                <h5>New Services</h5>
+                <div class="dropdown-content">
+                  <a href="New-products/latest-arrival.html">Latest Arrivals</a>
+                  <a href="New-products/popuar.html">Popular</a>
+                  <a href="New-products/Special-offer.html">Special Offers</a>
+                </div>
+              </li>
+              <li class="dropdown">
+                <h5>Train Fleet</h5>
+                <div class="dropdown-content">
+                  <a href="Electronics/mobile.html">Smartphones</a>
+                  <a href="Electronics/laptop.html">Laptops</a>
+                  <a href="Electronics/accessoray.html">Accessories</a>
+                </div>
+              </li>
+              <li class="dropdown">
+                <h5>My Trip</h5>
+                <div class="dropdown-content">
+                  <a href="Books/fiction.html">Fiction</a>
+                  <a href="Books/Non-fiction.html">Non-Fiction</a>
+                  <a href="Books/Childern.html">Children's Books</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="navbar-right">
+            <ul class="navbar-items">
+              <li>
+                <h5><i class="fas fa-search" style="color: red"></i></h5>
+              </li>
+              <li>
+                <h5><i class="fas fa-user-circle"></i> Register</h5>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </section>
+    </header>
+    <main>
+      <!--New offers -->
+      <section>
+        <div class="journey-container">
+          <div class="location-options">
+            <select name="from-location" id="from-location">
+              <option value="">From Location</option>
+              <!-- Add your options here -->
+            </select>
+            <select name="to-location" id="to-location">
+              <option value="">To Location</option>
+              <!-- Add your options here -->
+            </select>
+            <button class="search-button">Search</button>
+          </div>
+          <div class="journey-details">
+            <div class="journey-dates">
+              <label for="start-date">Start Journey Date:</label>
+              <input type="date" id="start-date" name="start-date" />
+              <label for="end-date">End Journey Date:</label>
+              <input type="date" id="end-date" name="end-date" />
+            </div>
+            <div class="additional-options">
+              <select name="passenger-options" id="passenger-options">
+                <option value="">Passenger, bicycles, BahnCards</option>
+                <!-- Add your options here -->
+              </select>
+            </div>
+            <div class="class-options">
+              <button class="class-button">First Class</button>
+              <button class="class-button">Second Class</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Carousel section -->
+      <section class="carousel">
+        <div class="card">
+          <div
+            class="image"
+            style="background-image: url('Images/fancard.png')"
+          ></div>
+          <div class="info">
+            <!-- Information for Image 1 -->
+            <button class="more-detail">More Detail</button>
+          </div>
+        </div>
+        <div class="card">
+          <div
+            class="image"
+            style="background-image: url('Images/image\ copy.png')"
+          ></div>
+          <div class="info">
+            <!-- Information for Image 2 -->
+            <button class="more-detail">More Detail</button>
+          </div>
+        </div>
+        <div class="card">
+          <div
+            class="image"
+            style="background-image: url('Images/image\ copy\ 2.png')"
+          ></div>
+          <div class="info">
+            <!-- Information for Image 3 -->
+            <button class="more-detail">More Detail</button>
+          </div>
+        </div>
+      </section>
+
+      <!--Footer-->
+      <section>
+        <footer>
+          <section>
+            <div class="payment-options">
+              <h3>Payment Options</h3>
+
+              <a
+                href="https://www.paypal.com/de/digital-wallet/send-receive-money?kid=p79723554003&gclid=Cj0KCQjwxqayBhDFARIsAANWRnSvvm_y5p9aKmbQ4ErR-y0zAVeV1UNV8mLP-7Q_wW2b1pnnEdqWkLYaAuBbEALw_wcB&gclsrc=aw.ds"
+                target="_blank"
+              >
+                <span><i class="fab fa-paypal"></i>PayPal</span>
+              </a>
+              <a href="https://www.mastercard.de/de-de.html" target="_blank">
+                <span
+                  ><i class="fa fa-credit-card" aria-hidden="true"> </i>
+                  Card</span
+                >
+              </a>
+              <a href="https://www.apple.com/apple-pay/" target="_blank">
+                <span><i class="fa-brands fa-apple-pay"></i>Apple Pay</span>
+              </a>
+            </div>
+          </section>
+          <section>
+            <h2>Do you want to follow us?</h2>
+            <h3>Check out our social media pages!</h3>
+            <!-- footer links -->
+            <ul class="icon-list">
+              <li class="icon">
+                <a href="https://www.instagram.com/"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+              </li>
+              <li class="icon">
+                <a
+                  href="https://de.linkedin.com/?src=go-pa&trk=sem-ga_campid.17342682713_asid.148803897556_crid.657308124612_kw.linkedin_d.c_tid.kwd-148086543_n.g_mt.e_geo.9043045&mcid=6935667189886640128&cid=&gad_source=1&gclid=Cj0KCQjw_-GxBhC1ARIsADGgDju9tBa3ypBZzBMBCjFWO_ApIU_nWxvsg5u18d6W00FF5q-4xI4lAboaAhZEEALw_wcB&gclsrc=aw.ds"
+                  ><i class="fab fa-linkedin"></i
+                ></a>
+              </li>
+              <li class="icon">
+                <a href="https://twitter.com/?lang=en"
+                  ><i class="fab fa-twitter"></i
+                ></a>
+              </li>
+            </ul>
+            <a href="#top">
+              scroll to top <i class="fa-solid fa-arrow-up"></i
+            ></a>
+          </section>
+        </footer>
+      </section>
+    </main>
+    <!--Including these script tags in your HTML file allows you to utilize the functionalities provided by jQuery, Popper.js, and Bootstrap in your web page.-->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>
